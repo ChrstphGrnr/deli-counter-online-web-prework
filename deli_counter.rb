@@ -28,3 +28,4 @@ end
 
 line = []
 take_a_number(line, 'Bob')
+take_a_number(line, 'Sally')
