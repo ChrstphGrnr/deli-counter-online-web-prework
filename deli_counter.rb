@@ -31,6 +31,7 @@ def now_serving(katz_deli)
   if $serving_counter > 0  
     puts "Currently serving #{$serving_counter}."
     $serving_counter += 1 
+    $number_in_line -= 1
     
   else
     puts "There is nobody waiting to be served!"
