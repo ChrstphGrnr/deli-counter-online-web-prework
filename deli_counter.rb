@@ -22,7 +22,7 @@ def take_a_number(katz_deli)
   $deli_counter += 1 
   $deli_last_in_line += 1 
   
-  puts "#{$something}, you are ticket number #{$deli_counter}. You are number #{deli_last_in_line} in line."
+  puts "#{$something}, you are ticket number #{$deli_counter}. You are number #{$deli_last_in_line} in line."
 
 end
 
