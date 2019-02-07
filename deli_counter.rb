@@ -5,6 +5,7 @@ $something = 'Hello'
 
 $deli_counter = 0 
 $deli_last_in_line = 0 
+$serving_counter = 0
 
 
 #def line(katz_deli) 
@@ -22,12 +23,12 @@ def take_a_number(katz_deli)
   $deli_counter += 1 
   $deli_last_in_line += 1 
   
-  puts "#{$something}, you are ticket number #{$deli_counter}. You are number #{$deli_last_in_line} in line."
+  puts "#{$something}, you are ticket number #{$deli_last_in_line}. You are number #{$deli_counter} in line."
 
 end
 
 def now_serving(katz_deli)
-  if $deli_counter > 0  
+  if $serving_counter > 0  
     puts "Currently serving #{$deli_counter}."
     $deli_counter -= 1 
   else
