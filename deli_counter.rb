@@ -1,3 +1,4 @@
+require 'pry'
 katz_deli = []
 
 
@@ -14,6 +15,7 @@ end
 def take_a_number(katz_deli)
   # katz_deli is now an array of ticket numbers, not names
   katz_deli << 1 
+  binding.pry
   number_in_line = katz_deli.last.index+1
   ticket_number = katz_deli.last.index+1
   puts "Welcome, you are ticket number #{last_in_line_name}. You are number #{number_in_line} in line."
