@@ -28,7 +28,7 @@ end
 
 def now_serving(katz_deli)
   if $serving_counter > 0  
-    puts "Currently serving #{$serving_counter}."
+    puts "Currently serving #{$ticket_number}."
     $serving_counter -= 1 
   else
     puts "There is nobody waiting to be served!"
