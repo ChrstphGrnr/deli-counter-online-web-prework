@@ -27,7 +27,7 @@ def take_a_number(katz_deli)
 end
 
 def now_serving(katz_deli)
-  if deli_counter > 0  
+  if $deli_counter > 0  
     puts "Currently serving #{$deli_counter}."
     $deli_counter -= 1 
   else
