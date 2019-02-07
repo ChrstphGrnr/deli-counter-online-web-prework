@@ -1,11 +1,13 @@
 require 'pry'
-katz_deli = []
+
 #global variable
 $something = 'Hello'
 
+$deli_counter = 0 
+
 
 def line(katz_deli) 
-  if katz_deli.length > 0 
+  if $deli_counter > 0 
     current_line = "The line is currently:"
     katz_deli.map.with_index { |x, i| current_line << " #{i+1}. #{x}"}
     puts current_line
