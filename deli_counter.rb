@@ -4,30 +4,32 @@ require 'pry'
 $something = 'Hello'
 
 $deli_counter = 0 
+$deli_last_in_line = 0 
 
 
-def line(katz_deli) 
-  if $deli_counter > 0 
-    current_line = "The line is currently:"
-    katz_deli.map.with_index { |x, i| current_line << " #{i+1}. #{x}"}
-    puts current_line
-  else
-     puts "The line is currently empty."
-  end
-end
+#def line(katz_deli) 
+#  if $deli_counter > 0 
+#    current_line = "The line is currently:"
+#    katz_deli.map.with_index { |x, i| current_line << " #{i+1}. #{x}"}
+#    puts current_line
+#  else
+#     puts "The line is currently empty."
+#  end
+#end
 
 def take_a_number(katz_deli)
   # katz_deli is now an array of ticket numbers, not names
-  katz_deli << katz_deli.length+1
-#  binding.pry
-  number_in_line = katz_deli.last
-  ticket_number = katz_deli.last
-  puts "#{$something}, you are ticket number #{number_in_line}. You are number #{ticket_number} in line."
+  $deli_counter += 1 
+  $deli_last_in_line += 1 
+  
+  puts "#{$something}, you are ticket number #{$deli_counter}. You are number #{deli_last_in_line} in line."
+
 end
 
 def now_serving(katz_deli)
-  if katz_deli.length > 0 
-    puts "Currently serving #{katz_deli.shift}."
+  if deli_counter > 0  
+    puts "Currently serving #{$deli_counter}."
+    $deli_counter -= 1 
   else
     puts "There is nobody waiting to be served!"
   end
