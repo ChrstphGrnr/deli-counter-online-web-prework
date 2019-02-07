@@ -18,7 +18,7 @@ def take_a_number(katz_deli)
   binding.pry
   number_in_line = katz_deli.last
   ticket_number = katz_deli.last.index+1
-  puts "Welcome, you are ticket number #{last_in_line_name}. You are number #{number_in_line} in line."
+  puts "Welcome, you are ticket number #{number_in_line}. You are number #{ticket_number} in line."
 end
 
 def now_serving(katz_deli)
