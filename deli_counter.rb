@@ -5,6 +5,7 @@ $something = 'Hello'
 
 $ticket_number = 0 
 $serving_counter = 1
+$number_in_line = 0
 
 
 #def line(katz_deli) 
