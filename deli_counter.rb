@@ -1,5 +1,6 @@
 require 'pry'
 katz_deli = []
+$something = 'hello'
 
 
 def line(katz_deli) 
