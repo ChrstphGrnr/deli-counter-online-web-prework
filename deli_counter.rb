@@ -36,3 +36,4 @@ take_a_number(line)
 # Welcome, you are ticket number 2. You are number 2 in line.
 now_serving(line)
 now_serving(line)
+take_a_number(line)
