@@ -17,7 +17,7 @@ def take_a_number(katz_deli)
   katz_deli << 1 
  
   number_in_line = katz_deli.last
-  ticket_number = katz_deli.last+1
+  ticket_number = katz_deli.index+1
   puts "Welcome, you are ticket number #{number_in_line}. You are number #{ticket_number} in line."
 end
 
