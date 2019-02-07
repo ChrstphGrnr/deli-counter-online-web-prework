@@ -5,7 +5,7 @@ $something = 'Hello'
 
 $deli_counter = 0 
 $deli_last_in_line = 0 
-$serving_counter = 0
+$serving_counter = 1
 
 
 #def line(katz_deli) 
