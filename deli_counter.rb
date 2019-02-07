@@ -3,8 +3,7 @@ require 'pry'
 #global variable
 $something = 'Hello'
 
-$deli_counter = 0 
-$deli_last_in_line = 0 
+$ticket_number = 0 
 $serving_counter = 1
 
 
@@ -20,17 +19,17 @@ $serving_counter = 1
 
 def take_a_number(katz_deli)
   # katz_deli is now an array of ticket numbers, not names
-  $deli_counter += 1 
-  $deli_last_in_line += 1 
+  $ticket_number += 1 
+     
   
-  puts "#{$something}, you are ticket number #{$deli_last_in_line}. You are number #{$serving_counter} in line."
-
+  puts "#{$something}, you are ticket number #{$ticket_number}. You are number #{$serving_counter} in line."
+  $serving_counter += 1
 end
 
 def now_serving(katz_deli)
   if $serving_counter > 0  
     puts "Currently serving #{$serving_counter}."
-    $serving_counter += 1 
+    $serving_counter -= 1 
   else
     puts "There is nobody waiting to be served!"
   end
