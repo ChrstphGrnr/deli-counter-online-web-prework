@@ -4,7 +4,7 @@ require 'pry'
 $something = 'Hello'
 
 $ticket_number = 0 
-$serving_counter = 1
+$serving_counter = 0
 $number_in_line = 1
 
 
@@ -31,6 +31,7 @@ def now_serving(katz_deli)
   if $serving_counter > 0  
     puts "Currently serving #{$serving_counter}."
     $serving_counter -= 1 
+    
   else
     puts "There is nobody waiting to be served!"
   end
