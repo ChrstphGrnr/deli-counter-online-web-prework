@@ -1,6 +1,7 @@
 require 'pry'
 katz_deli = []
-$something = 'hello'
+#global variable
+$something = 'Hello'
 
 
 def line(katz_deli) 
@@ -19,7 +20,7 @@ def take_a_number(katz_deli)
 #  binding.pry
   number_in_line = katz_deli.last
   ticket_number = katz_deli.last
-  puts "Welcome, you are ticket number #{number_in_line}. You are number #{ticket_number} in line."
+  puts "#{$something}, you are ticket number #{number_in_line}. You are number #{ticket_number} in line."
 end
 
 def now_serving(katz_deli)
