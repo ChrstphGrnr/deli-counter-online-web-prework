@@ -4,7 +4,7 @@ require 'pry'
 $something = 'Hello'
 
 $ticket_number = 0 
-$serving_counter = 0
+$serving_counter = 1
 $number_in_line = 1
 
 
@@ -19,10 +19,10 @@ $number_in_line = 1
 #end
 
 def take_a_number(katz_deli)
-  # katz_deli is now an array of ticket numbers, not names
-  $ticket_number += 1 
-     
   
+# katz_deli is now an array of ticket numbers, not names
+
+  $ticket_number += 1 
   puts "#{$something}, you are ticket number #{$ticket_number}. You are number #{$number_in_line} in line."
   $number_in_line += 1
 end
@@ -30,7 +30,7 @@ end
 def now_serving(katz_deli)
   if $serving_counter > 0  
     puts "Currently serving #{$serving_counter}."
-    $serving_counter -= 1 
+    $serving_counter += 1 
     
   else
     puts "There is nobody waiting to be served!"
