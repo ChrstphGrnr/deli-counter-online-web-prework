@@ -14,8 +14,8 @@ end
 
 def take_a_number(katz_deli)
   # katz_deli is now an array of ticket numbers, not names
-  katz_deli << 1 
-  binding.pry
+  katz_deli << katz_deli.length+1
+#  binding.pry
   number_in_line = katz_deli.last
   ticket_number = katz_deli.last
   puts "Welcome, you are ticket number #{number_in_line}. You are number #{ticket_number} in line."
