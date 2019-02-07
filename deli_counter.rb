@@ -11,11 +11,12 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, new_customer)
+def take_a_number(katz_deli)
+  # katz_deli is now an array of ticket numbers, not names
   katz_deli.push(new_customer)
   last_in_line_number = katz_deli.index(new_customer)+1
   last_in_line_name = katz_deli.last
-  puts "Welcome, #{last_in_line_name}. You are number #{last_in_line_number} in line."
+  puts "Welcome, you are ticket number #{last_in_line_name}. You are number #{last_in_line_number} in line."
 end
 
 def now_serving(katz_deli)
@@ -27,6 +28,7 @@ def now_serving(katz_deli)
 end
 
 line = []
-take_a_number(line, 'Bob')
-now_serving(line)
-take_a_number(line, 'Sally')
+take_a_number(line)
+# Welcome, you are ticket number 1. You are number 1 in line.
+take_a_number(line)
+# Welcome, you are ticket number 2. You are number 2 in line.
